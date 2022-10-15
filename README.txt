@@ -4,4 +4,3 @@ Credits:
 		Unsplash (unsplash.com)
 
 	html5up.net | @ajlkn
-F	
