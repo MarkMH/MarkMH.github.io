@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Basic structure of Strata from HTML5 UP html5up.net | @ajlkn
+	Free for private and commercial use under CCA 3.0 license (html5up.net/license)
+	Significant customizations by Mark Marner-Hausen 
+-->
+<html>
+	<head>
+		<title>Webpage Marner-Hausen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatar_mark_03.jpg" alt="" /></a>
+					<h1><strong>Hi, my Name is Mark</strong>,<br /> 
+						I am a scientist by training, <br />
+						increasingly excited about AI <br />
+						as a means of data analysis</a>.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>A Horse Race to classify Amazon Kindle Reviews</h1>
+
+							<p align="justify" style="text-align:justify"><b>
+								This work is one of my submissions for the summer program at the Barcelona School of Economics of the Pompeu Fabra University, 
+								graded A+. In this project, the topic, and the data to be analyzed could be freely chosen, with the aim of showcasing what has 
+								been learned in class. In my project, Amazon Kindle reviews available at 
+								<a href="https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews">kaggle</a> are analyzed.  
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b>
+								The dataset contains approximately 1,000,000 Amazon Kindle reviews. These are reviews from the Kindle Book Store, i.e., the 
+								reviews refer to books. The goal is to develop an algorithm that predicts whether a previously unseen review is positive or 
+								negative based on the text content. The analysis is divided into two parts: First, the data is cleaned, and the text of the 
+								reviews is preprocessed such that it is suitable for computations; second, a horse race is carried out to identify the best 
+								performing machine learning model given the circumstances.  
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/wordcloud_kindle.png" alt="" /></span> 
+								Text preprocessing includes removing all punctuation, all stop words, all numbers, stemming and lemming, as well as vectorization. 
+								Stemming and Lemming means that different variants of a word are traced back to their common root. After vectorization, a matrix 
+								is obtained in which the columns represent all the words used in all the reviews. The entries for each observation, indicate how 
+								often the word of each column occurs in the respective review.  As a result, the matrix obtained is rather big, and not all its 
+								features are relevant for the subsequent analysis. Therefore, <i>TfidfVectorizer</i> from <i>sklearn.feature_extraction.text</i> 
+								is used to identify meaningful features. The word cloud on the left displays the meaningful words according to their importance. 
+								The word cloud suggests that the text preprocessing is operating as desired. 
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image right"><img src="images/fulls/auc_kindle.png"  /></span> 
+								In the subsequent analysis, a horse race is carried out between <i>sklearn.neighbors.KNeighborsClassifier</i>, 
+								<i>sklearn.ensemble.RandomForestClassifier</i>, <i>sklearn.ensemble.GradientBoostingClassifier</i> and 
+								<i>sklearn.ensemble.AdaBoostClassifier</i>. Based on the graph on the right, the Gradient Boosting Classifier slightly performs best on 
+								the basis of the ROC AUC score, rendering it the horse race winner. Note that for computational feasibility reasons, only a subset of the 
+								data was considered, such that the result for the entire data set could be more distinct.  
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b>
+								If you are curious about the implementation details or the Confusion Matrix of the winner, please visit my GitHub repository.
+							</b></p>
+						</header>
+					</section>
+
+					<section>
+								<ul class="actions fit">
+									<!--
+									<li><a href="XX" class="button fit">Working Paper</a></li>
+									-->
+									<li><a href="https://github.com/MarkMH/kindle_reviews" class="button fit">GitHub</a></li>
+									<li><a href="index.html" class="button fit">Portfolio</a></li>
+								</ul>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/MarkMH" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mark-marner-hausen-854a3a117/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul 
+						<li><p class="copyright">&copy; Mark Marner-Hausen <br />
+							mmarnerh@gmail.com</li></p>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

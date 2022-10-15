@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Basic structure of Strata from HTML5 UP html5up.net | @ajlkn
+	Free for private and commercial use under CCA 3.0 license (html5up.net/license)
+	Significant customizations by Mark Marner-Hausen 
+-->
+<html>
+	<head>
+		<title>Webpage Marner-Hausen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatar_mark_03.jpg" alt="" /></a>
+					<h1><strong>Hi, my Name is Mark</strong>,<br /> 
+						I am a scientist by training, <br />
+						increasingly excited about AI <br />
+						as a means of data analysis</a>.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>Mountain Car & Neural Networks (Soon Available)</h1>
+
+							<p align="justify" style="text-align:justify"><b>
+								In this project, I attempt to solve a classical benchmark problem for reinforcement learning algorithms using neural 
+								networks provided by the <i>torch.nn</i> module. In this attempt, I follow an actor-based on policy method where the policy 
+								is parameterized by a function approximation, namely, an approximation using neural networks. The advantage of this 
+								approach over Q-learning is that the stochasticity of the policy allows exploration.  
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/mountain_car.png" alt="" /></span> 
+								Mountain Car is a deterministic multidimensional problem where a car is at the bottom of a valley with the goal of 
+								reaching the flag on the right hill. 
+								The strategy space consists only of the acceleration of the car in either direction of the valley. The catch is, that 
+								the car is underpowered, so it will not be able to just go up the steep hill. Consequently, the car must learn to harness 
+								the potential energy by driving up the opposite hill before it can reach the objective at the top of the right-hand hill. 
+								It follows that the objective function is not straightforward and that exploration off path is very welcome.   
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b>
+								The gym module provides two environments for mountain car: one with discrete actions and one with continuous actions. In 
+								this project, the former is sought to be solved 
+								(<a href="https://mgoulao.github.io/gym-docs/environments/classic_control/mountain_car_continuous/">gym documentation</a>).  
+							</b></p>
+						</header>
+					</section>
+
+					<section>
+								<ul class="actions fit">
+									<!--
+									<li><a href="XX" class="button fit">Working Paper</a></li>								
+									<li><a href="XX" class="button fit">GitHub</a></li>
+									-->
+									<li><a href="index.html" class="button fit">Portfolio</a></li>
+									
+								</ul>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/MarkMH" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mark-marner-hausen-854a3a117/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul 
+						<li><p class="copyright">&copy; Mark Marner-Hausen <br />
+							mmarnerh@gmail.com</li></p>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

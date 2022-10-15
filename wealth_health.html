@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Basic structure of Strata from HTML5 UP html5up.net | @ajlkn
+	Free for private and commercial use under CCA 3.0 license (html5up.net/license)
+	Significant customizations by Mark Marner-Hausen 
+-->
+<html>
+	<head>
+		<title>Webpage Marner-Hausen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatar_mark_03.jpg" alt="" /></a>
+					<h1><strong>Hi, my Name is Mark</strong>,<br /> 
+						I am a scientist by training, <br />
+						increasingly excited about AI <br />
+						as a means of data analysis</a>.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>The Effects of Wealth Shocks on Health</h1>
+
+							<p align="justify" style="text-align:justify"><b>
+								This project focuses on the effects of wealth shocks on health status among older U.S.
+								 retirees, based on the statistical analysis of [Schwandt, H. (2018). Wealth shocks and health outcomes: 
+								 evidence from stock market fluctuations. <i>American Economic Journal: Applied Economics</i>, 10(4), 349-77]. This 
+								 is a replication of the original work, using the same dataset but a different programming language. More 
+								 specifically, the original work was done in Stata, while this project, available on Github (see the link 
+								 below), is done in Matlab. 								 
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/wealth_health_01.png" alt="" /></span> 
+								The dataset used is from the Health and Retirement Study (HRS), conducted by the University of Michigan's 
+								Institute for Social Research. The HRS is a biennial longitudinal study that surveys a sample of about 20,000 
+								elderly households in the United States. Panel data include information on wealth, mental and physical health,
+								 mortality, as well as demographic information. The wealth shocks are a construct based on S&P500 movements, 
+								 see left for the period under consideration, as well as data on the share of wealth that each retiree has 
+								 invested in equities, their life expectancy, and their expected lifetime income. 
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image right"><img src="images/fulls/wealth_health_02.png"  /></span> 
+								My replication arrives at very similar results to Schwandt (2018), although I made slightly stricter assumptions
+								about wealth shocks to keep closer to reality. If you are interested in learning more about this, click the 
+								"Seminar Paper" button at the bottom of this page. The table on the right shows the main results, keeping in
+								mind that the dependent variable is always defined as the change in measures from one reporting period to the
+								next. The results show that wealth shocks based on stock market changes have a significant impact on the health
+								measures captured by the HRS, such as the physical health index, self-reported health, self-reported change
+								in health, and the mental health index. The latter is intuitive, as one would expect significant wealth losses
+								to have an impact on mental health. In contrast, the significant effects on the physical health measures is
+								surprising. In the seminar paper, link at the end of the page, it is discussed which medical conditions are the
+								 driving factors for these results. Indeed, it is not long-term conditions such as cancer, diabetes or arthritis
+								 that are significantly affected by the wealth shocks, but short-term conditions such as hypertension.
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b>
+								Beyond the results of the original study, I examined two opposing effects in more detail. On the one hand, 
+								people of advanced age are closer to the borderline of severe disease, so wealth shocks are more likely to 
+								have an observable effect. On the other hand, one would expect that an older respondent would tend to invest 
+								in less risky stocks and have fewer years to cover with his or her assets compared to a younger respondent. 
+								In this regard, I find suggestive evidence that the latter effect is stronger and that the health of retirees 
+								under the age of 76 is affected more negatively after a stock market-related wealth shock. If you are 
+								interested in this contribution to the literature, the corresponding analysis can be found on the Github 
+								repository below.  
+							</b></p>
+						</header>
+					</section>
+
+					<section>
+								<ul class="actions fit">
+									<li><a href="https://drive.google.com/file/d/1Xjgu4aHUwrcJwssHIlTDpbpEbHh9lFWd/preview" class="button fit">Seminar Paper</a></li>
+									<li><a href="https://github.com/MarkMH/wealth_health" class="button fit">GitHub</a></li>
+									<li><a href="index.html" class="button fit">Portfolio</a></li>
+								</ul>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/MarkMH" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mark-marner-hausen-854a3a117/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul 
+						<li><p class="copyright">&copy; Mark Marner-Hausen <br />
+							mmarnerh@gmail.com</li></p>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

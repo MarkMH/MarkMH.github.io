@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Basic structure of Strata from HTML5 UP html5up.net | @ajlkn
+	Free for private and commercial use under CCA 3.0 license (html5up.net/license)
+	Significant customizations by Mark Marner-Hausen 
+-->
+<html>
+	<head>
+		<title>Webpage Marner-Hausen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatar_mark_03.jpg" alt="" /></a>
+					<h1><strong>Hi, my Name is Mark</strong>,<br /> 
+						I am a scientist by training, <br />
+						increasingly excited about AI <br />
+						as a means of data analysis</a>.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>Emojis as Labels & ROC-AUC vs. Average Precision</h1>
+
+							<p align="justify" style="text-align:justify"><b> 
+								This work is a joint project with <a href="https://www.linkedin.com/in/lennart-struth-b10524180">Lennart Struth</a> and was 
+								submitted to the summer program at the Barcelona School of Economics 
+								of the Pompeu Fabra University, receiving the highest possible grade A+. The task consists of labeling tweets based on emojis and 
+								subsequently training an algorithm to detect positive or negative emotions based on the text of tweets. This algorithm is 
+								eventually used to classify around 300,000 unseen Spanish tweets from the fall of October 2017. This is to investigate the 
+								mood in Spain following police brutality in the wake of the Catalan referendum movement.  The data is confidential as it is 
+								part of an ongoing study at the Barcelona School of Economics. The purpose of this project is to discuss the methodology, 
+								which is provided as a notebook on GitHub (see below). In this context, the performance of the Extreemly Randomized Tree 
+								model is discussed in terms of ROC-AUC vs. Average Precision.   
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/emojis_tweets.png" alt="" /></span> 
+								On the left side, the confusion matrix of the trained Extreemly Randomized Tree is shown. As a reminder, the false positives 
+								are shown in the upper right, and the false negatives in the lower left. The results are surprisingly strong considering that 
+								we were only able to label 10,000 tweets based on the emojis and that the sample is unbalanced in the ratio between positively 
+								and negatively labeled tweets of 3.5 to 1. We conduct a horse race between different supervised machine learning models to 
+								determine the model used for all tweets. Under the circumstances, the Extreemly Randomized Trees came out on top. This is not 
+								surprising since the model has several advantageous properties relevant to our use case. For example, compared to the Random 
+								Forest Classifier, it reduces bias by sampling from the entire dataset when creating the trees. Moreover, it reduces variance 
+								by adding randomization so that the algorithm is less influenced by certain features or patterns in the dataset. Finally, it 
+								is computationally faster, which is a great advantage when working with text data. 
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b><span class="image right"><img src="images/fulls/emojis_tweets_02.png"  /></span> 
+								The figure on the right shows the result of classifying the previously unseen tweets. More precisely, the percentage of tweets 
+								classified as positive per hour. Again, the results are surprisingly sharp. We observe a steep drop on October 1, 2017, the 
+								day Spanish police tried to use violence to prevent voting in Catalonia. It seems to take some time for the percentage to 
+								return to its previous level. Which might be an interesting observation in itself. 
+							</b></p>
+
+							<p align="justify" style="text-align:justify"><b>
+								If you are interested in the implementation details or a discussion of the performance in terms of ROC-AUC and Average Precision, 
+								please check out these details on GitHub.
+							</b></p>
+						</header>
+					</section>
+
+					<section>
+								<ul class="actions fit">
+									<!--
+									<li><a href="XX" class="button fit">Working Paper</a></li>
+									-->
+									<li><a href="https://github.com/MarkMH/emojis_tweets" class="button fit">GitHub</a></li>
+									<li><a href="index.html" class="button fit">Portfolio</a></li>
+								</ul>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/MarkMH" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mark-marner-hausen-854a3a117/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul 
+						<li><p class="copyright">&copy; Mark Marner-Hausen <br />
+							mmarnerh@gmail.com</li></p>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
