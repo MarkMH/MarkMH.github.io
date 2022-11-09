@@ -33,14 +33,15 @@
 							<h1>A Horse Race to classify Amazon Kindle Reviews</h1>
 
 							<p align="justify" style="text-align:justify"><b>
-								This work is one of my submissions for the summer program at the Barcelona School of Economics of the Pompeu Fabra University, 
-								graded A+. In this project, the topic, and the data to be analyzed could be freely chosen, with the aim of showcasing what has 
-								been learned in class. In my project, Amazon Kindle reviews available at 
+								This work was submitted to the Barcelona School of Economics of the Pompeu Fabra University, 
+								graded A+. In this project, the topic, the methodology and the data to be analyzed could be freely chosen, with the
+								objective of showcasing what has 
+								been learned in class. In my project 1,000,000 Amazon Kindle reviews available at 
 								<a href="https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews">kaggle</a> are analyzed.  
 							</b></p>
 
 							<p align="justify" style="text-align:justify"><b>
-								The dataset contains approximately 1,000,000 Amazon Kindle reviews. These are reviews from the Kindle Book Store, i.e., the 
+								The reviews originate from the Kindle Book Store, i.e., the 
 								reviews refer to books. The goal is to develop an algorithm that predicts whether a previously unseen review is positive or 
 								negative based on the text content. The analysis is divided into two parts: First, the data is cleaned, and the text of the 
 								reviews is preprocessed such that it is suitable for computations; second, a horse race is carried out to identify the best 
@@ -51,9 +52,9 @@
 								Text preprocessing includes removing all punctuation, all stop words, all numbers, stemming and lemming, as well as vectorization. 
 								Stemming and Lemming means that different variants of a word are traced back to their common root. After vectorization, a matrix 
 								is obtained in which the columns represent all the words used in all the reviews. The entries for each observation, indicate how 
-								often the word of each column occurs in the respective review.  As a result, the matrix obtained is rather big, and not all its 
+								often the word of each column occurs in a given review.  As a result, the matrix obtained is rather big, and not all its 
 								features are relevant for the subsequent analysis. Therefore, <i>TfidfVectorizer</i> from <i>sklearn.feature_extraction.text</i> 
-								is used to identify meaningful features. The word cloud on the left displays the meaningful words according to their importance. 
+								is used to identify meaningful features. The words deemed meaningful are displayed in the word cloud on the left. 
 								The word cloud suggests that the text preprocessing is operating as desired. 
 							</b></p>
 
@@ -66,7 +67,7 @@
 							</b></p>
 
 							<p align="justify" style="text-align:justify"><b>
-								If you are curious about the implementation details or the Confusion Matrix of the winner, please visit my GitHub repository.
+								If you are curious about the implementation details or the Confusion Matrix of the winner, please get in touch or visit my GitHub repository.
 							</b></p>
 						</header>
 					</section>
