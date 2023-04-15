@@ -19,8 +19,8 @@
 					<a class="image avatar"><img src="images/avatar_mark_03.jpg" alt="" /></a>
 					<h1><strong>Hi, my Name is Mark</strong>,<br /> 
 						I am a scientist by training, <br />
-						increasingly excited about AI <br />
-						as a means of data analysis</a>.</h1>
+						increasingly excited about <br />
+						engineering and AI </a>.</h1>
 				</div>
 			</header>
 
@@ -39,17 +39,16 @@
 								subsequently training an algorithm to detect positive or negative emotions in tweets. This algorithm is 
 								eventually used to classify around 300,000 unseen Spanish tweets from the fall of October 2017. This is to investigate the 
 								mood in Spain following police brutality in the wake of the Catalan referendum movement.  The data is confidential as it is 
-								part of an ongoing study at the Barcelona School of Economics. The purpose of this project is to discuss the methodology and performance, 
-								which is done in a notebook on GitHub (see below). In this context, the performance of a Extreemly Randomized Trees 
-								model is discussed in terms of ROC-AUC vs. Average Precision.   
+								part of an ongoing study at the Barcelona School of Economics. The purpose of this project is to discuss the methodology and 
+								performance in terms of ROC-AUC vs. Average Precision, which is done in a notebook on GitHub (see below). 
 							</b></p>
 
 							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/emojis_tweets.png" alt="" /></span> 
-								On the left side, the confusion matrix of the trained Extreemly Randomized Trees is shown. The results are surprisingly strong considering that 
-								we were only able to label 10,000 tweets based on the emojis and that the sample is unbalanced in the ratio between positively 
-								and negatively labeled tweets of 3.5 to 1. Handling small training data and imbalanced samples is explicitly discussed in this project on GitHub. 
-								We conduct a horse race between different supervised machine learning models to 
-								determine the model used for all tweets. Under these circumstances, the Extreemly Randomized Trees came out on top. This is not 
+								Extreemly Randomized Trees performed particularly well in our setting, this is the corresponding confusion matrix. 
+								The results are surprisingly strong considering that 
+								we were only able to label 10,000 tweets based on the emojis and that the sample is unbalanced between positively 
+								and negatively labeled tweets in the ratio of 3.5 to 1. Handling small training data and imbalanced samples is explicitly discussed in this project on GitHub. 
+								The fact that Extreemly Randomized Trees performed well under these circumstances is not 
 								surprising since the model has several advantageous properties relevant to our use case. For example, compared to the Random 
 								Forest Classifier, it reduces bias by sampling from the entire dataset when creating the trees. Moreover, it reduces variance 
 								by adding randomization so that the algorithm is less influenced by certain features or patterns in the dataset. Finally, it 
