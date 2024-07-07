@@ -77,7 +77,6 @@ input, select, textarea {
 }
 
 /* Basic */
-
 	html {
 		box-sizing: border-box;
 	}
@@ -244,6 +243,10 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+	
+	.hidden {
+		display: none;
+	}
 
 /* Container */
 
@@ -304,7 +307,7 @@ input, select, textarea {
 	}
 
 		.row > * {
-			box-sizing: border-box;
+				box-sizing: border-box;
 		}
 
 		.row.gtr-uniform > * > :last-child {

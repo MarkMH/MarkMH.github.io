@@ -133,3 +133,32 @@ function readmore() {
   } 
 
 
+  function readmore_articles() {
+    const section = document.querySelector('#two');
+    const hiddenArticles = section.querySelectorAll('.work-item.hidden');
+    const readMoreContainer = document.querySelector('#readMoreContainer');
+    const readLessContainer = document.querySelector('#readLessContainer');
+
+    hiddenArticles.forEach(article => {
+        article.classList.remove('hidden');
+    });
+
+    readMoreContainer.classList.add('hidden');
+    readLessContainer.classList.remove('hidden');
+}
+
+function readless_articles() {
+    const section = document.querySelector('#two');
+    const articles = section.querySelectorAll('.work-item');
+    const readMoreContainer = document.querySelector('#readMoreContainer');
+    const readLessContainer = document.querySelector('#readLessContainer');
+
+    articles.forEach((article, index) => {
+        if (index >= 4 && article.id !== 'readMoreContainer' && article.id !== 'readLessContainer') {
+            article.classList.add('hidden');
+        }
+    });
+
+    readMoreContainer.classList.remove('hidden');
+    readLessContainer.classList.add('hidden');
+}
