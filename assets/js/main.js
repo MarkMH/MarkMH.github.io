@@ -132,7 +132,6 @@ function readmore() {
 	}
   } 
 
-
   function readmore_articles() {
     const section = document.querySelector('#two');
     const hiddenArticles = section.querySelectorAll('.work-item.hidden');
