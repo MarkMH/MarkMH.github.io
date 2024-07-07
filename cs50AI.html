@@ -29,27 +29,21 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h1>CS50AI by Havard University (soon available)</h1>
+							<h1>CS50AI by Havard University</h1>
 
 							<p align="justify" style="text-align:justify"><b>
-								Currently working on the final project for Harvard's <a href="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python?index=product_value_
-								experiment_a&queryID=10ebe415623650af8fbd7a7bbce946ac&position=3&linked_from=autocomplete"> CS50AI </a>, where I am bringing an exciting concept to life: 
+								Recursive-Depth-First-Graph-Search as part of Harvardx's <a href="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python?index=product_value_
+								experiment_a&queryID=10ebe415623650af8fbd7a7bbce946ac&position=3&linked_from=autocomplete"> CS50AI </a>: 
 							</b></p>
 
-							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/four_wins_ai.png" alt="" /></span> 
-								My goal is to develop a web application enabling users to play the board game "Four-Wins" against a reinforcement learning AI. The game 
-								mechanics are encapsulated in a Python class and stored within a SQLite database. Each game played by users against the AI enriches this 
-								database, contributing to the AI's learning and performance improvement. The unique aspect of this project is its deployment in a production 
-								environment, where the AI undergoes regular retraining intervals.
+							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/tictactoe.png" alt="" /></span> 
+								This project is characterized by the straightforwardness and simplicity with which it was implemented in Python. It solves Tic-Tac-Toe, 
+								basically any finite 2-player game, using a recursive depth-first graph search. The game Tic-Tac-Toe was adopted from the pygames implementation. 
 								<br>
-								<br>
-								A central feature of the app is a leaderboard that tracks and displays the win/loss/draw ratio for all users as well as the AI. Initially, the AI 
-								is expected to perform less effectively than human players. However, as it evolves with each new version, the goal is for the AI to reach a 
-								point where it consistently achieves draws in each game. This project is a practical test of the theory that an AI can learn and adapt from continuous 
-								interaction with human strategies, gradually enhancing its gameplay. Let's put this theory into practice and see the evolution.
-							</b></p>
-
-								
+								Since the game is finite, 
+								the AI can calculate every terminal situation and select the most advantageous outcome. By recursively climbing up the graph, which can be thought 
+								of as a classic tree, the AI determines the optimal move given any, and in particular the current state of the game-board. As a result, the AI can never lose, 
+								but you as a human adversary could lose and always will should you not play optimally.
 							</b></p>
 						</header>
 					</section>
@@ -58,8 +52,8 @@
 								<ul class="actions fit">
 									<!--
 									<li><a href="XX" class="button fit">Working Paper</a></li>								
-									<li><a href="XX" class="button fit">GitHub</a></li>
 									-->
+									<li><a href="https://github.com/MarkMH/recursive-df-graph-search" class="button fit">GitHub</a></li>
 									<li><a href="index.html" class="button fit">Portfolio</a></li>
 									
 								</ul>
