@@ -29,28 +29,28 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h1>Mountain Car & Neural Networks</h1>
+							<h1>Code Migration App (Streamlit)</h1>
 
 							<p align="justify" style="text-align:justify"><b>
-								In this project, I attempt to solve a classical benchmark problem for reinforcement learning algorithms using neural 
-								networks provided by the <i>torch.nn</i> module. In this attempt, I follow an actor-based on policy method where the policy 
-								is parameterized by a function approximation, namely, an approximation using neural networks. The advantage of this 
-								approach over Q-learning is that the stochasticity of the policy allows exploration.  
+								This project features a Streamlit-Application, dedicated to utilizing Large Language Models (LLMs) 
+								for the translation of code between different programming languages. The primary aim is to assist developers in legacy code migration, 
+								including translating and optimizing SQL queries during cloud migrations, such as from Oracle to Snowflake. 
+								Additionally, it offers the capability to translate high-level code, such as Python, into lower-level languages like C++ or C for performance optimization.
+								<br>
+								Our application features dynamically integrated code-editing windows that highlight syntax based on the selected language, ensuring 
+								a seamless and user-friendly experience. The core functionality of the app is built on the OpenAI API, featuring ChatGPT.  
 							</b></p>
 
-							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/mountain_car.png" alt="" /></span> 
-								Mountain Car is a deterministic multidimensional problem where a car is at the bottom of a valley with the goal of 
-								reaching the flag on the right hill. 
-								The strategy space consists only of the acceleration of the car in either direction of the valley. The catch is, that 
-								the car is underpowered, so it will not be able to just go up the steep hill. Consequently, the car must learn to harness 
-								the potential energy by driving up the opposite hill before it can reach the objective at the top of the right-hand hill. 
-								It follows that the objective function is not straightforward and that exploration off path is very important.   
+							<p align="justify" style="text-align:justify"><b><span class="image left"><img src="images/fulls/streamlit_app.png" alt="" /></span> 
+								The very simplistic example on the left demonstrates the app's functionality. The user can select the source and target language,
+								enter code in the source language, and then translate it to the target language. The app then displays the translated code in the
+								right-hand window. The current state of the prompt engineering is such that complex code can get translated, but 
+								we acknowledge that ensuring absolute functional and output parity pre- and post-translation is not yet guaranteed
 							</b></p>
-
 							<p align="justify" style="text-align:justify"><b>
-								The gym module provides two environments for mountain car: one with discrete actions and one with continuous actions. In 
-								this project, the former is sought to be solved 
-								(<a href="https://mgoulao.github.io/gym-docs/environments/classic_control/mountain_car_continuous/">gym documentation</a>).  
+								This is where the new features of common LLMs allowing code execution are invaluable. Leveraging these capabilities, we can iteratively 
+								refine prompts until the output is identical, ensuring the code functions as intended. By partitioning the code and deploying multiple 
+								LLMs in a majority-vote configuration, we believe the translation accuracy can be significantly enhanced.
 							</b></p>
 						</header>
 					</section>
@@ -58,9 +58,9 @@
 					<section>
 								<ul class="actions fit">
 									<!--
-									<li><a href="XX" class="button fit">Working Paper</a></li>								
-									<li><a href="XX" class="button fit">GitHub</a></li>
-									-->
+									<li><a href="XX" class="button fit">Working Paper</a></li>					
+									<li><a href="https://github.com/MarkMH/codemigrationapp_dev.git" class="button fit">GitHub</a></li>
+									-->	
 									<li><a href="index.html" class="button fit">Portfolio</a></li>
 									
 								</ul>
