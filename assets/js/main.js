@@ -153,7 +153,7 @@ function readless_articles() {
     const readLessContainer = document.querySelector('#readLessContainer');
 
     articles.forEach((article, index) => {
-        if (index >= 4 && article.id !== 'readMoreContainer' && article.id !== 'readLessContainer') {
+        if (index > 2) {
             article.classList.add('hidden');
         }
     });
@@ -161,3 +161,4 @@ function readless_articles() {
     readMoreContainer.classList.remove('hidden');
     readLessContainer.classList.add('hidden');
 }
+
